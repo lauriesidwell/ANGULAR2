@@ -1,0 +1,25 @@
+<html>
+<head>
+	<title>2nd Angular</title>
+</head>
+<body>
+
+
+<div ng-app="">
+	<div>	
+		<input ng-model="petfood" type="text" placeholder="petfood"/>
+		 <input ng-model="pet" type="text" placeholder="pet"/>
+		<h1 ng-if="(petfood && pet)">My favorite pet food is {{ petfood }} for {{ pet }}</h1><br><br>
+		<input ng-model="fruit" type="text" placeholder="fruit"/>
+		 <input ng-model="price1" type="number" placeholder="price1"/>
+		 <input ng-model="price2" type="number" placeholder="price2"/>
+		 <input ng-model="coupon" type="number" placeholder="coupon dollar amount"/>
+		<h1 ng-if="(fruit && price1 && price2)">My favorite fruit is {{ fruit }} and they cost {{ (price1 + price2 - coupon) * 1.06 }} dollars after your coupon.</h1>
+	</div>
+ </div>
+
+
+ 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>	
+
+</body>
+</html>
